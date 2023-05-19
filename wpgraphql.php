@@ -6,6 +6,10 @@ namespace WPgraphql;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
+if (!defined('WPG_PLUGIN_PATH')) {
+    define('WPG_PLUGIN_PATH', __DIR__);
+}
+
 /**
  * @author  Kris van Hes <kris@socialbrothers.nl>
  *
