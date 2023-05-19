@@ -24,7 +24,7 @@ defined('ABSPATH') || exit('Forbidden');
  * Check if WPGraphQL is active
  * otherwise return error
  */
-register_activation_hook(__FILE__, function(){
+register_activation_hook(__FILE__, function (): void {
     if (!is_plugin_active('wp-graphql/wp-graphql.php')) {
         _e('ERROR: Plugin WPGraphQL needs to be active to this plugin to work', 'WPG');
         die;
