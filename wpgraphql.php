@@ -8,7 +8,7 @@ namespace WPgraphql;
  * @author  Kris van Hes <kris@socialbrothers.nl>
  *
  * @wordpress-plugin
- * Plugin Name:       WPgraphql demo
+ * Plugin Name:       WPGraphQL demo
  * Description:       Simple API request demo
  * Version:           0.0.1
  * Author:            Kris van Hes
