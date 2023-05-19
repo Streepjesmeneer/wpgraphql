@@ -11,5 +11,7 @@
             "email": "kris@socialbrothers.nl"
         }
     ],
-    "require": {}
+    "require-dev": {
+        "symfony/var-dumper": "^6.0"
+    }
 }
