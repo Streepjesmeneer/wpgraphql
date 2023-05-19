@@ -8,5 +8,7 @@ defined('ABSPATH') || exit('Forbidden');
 $router_namespace = 'wpgraphql';
 
 $endpoints = [
-    'GET' => [],
+    'GET' => [
+        'products'  => 'get_products'
+    ],
 ];
