@@ -1,0 +1,15 @@
+{
+    "name": "krisvanhes/wpgraphql",
+    "autoload": {
+        "psr-4": {
+            "WPgraphql\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "krisvhes",
+            "email": "kris@socialbrothers.nl"
+        }
+    ],
+    "require": {}
+}
