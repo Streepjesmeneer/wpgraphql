@@ -1,0 +1,7 @@
+{
+    "name": "Demo Product",
+    "price": 19.99,
+    "description": "This is a demo product for testing purposes",
+    "category": "Electronics",
+    "availability": true
+}
