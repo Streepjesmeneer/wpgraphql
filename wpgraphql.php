@@ -30,3 +30,21 @@ register_activation_hook(__FILE__, function (): void {
         die;
     }
 });
+
+/**
+ * Registering routes for the API
+ * This function registers custom API endpoints based on the configuration defined in config/endpoints.php file.
+ * Each endpoint is registered under the myplugin/v1 namespace.
+ */
+add_action('rest_api_init', function (): void {
+    include_once __DIR__ . '/config/endpoints.php';
+
+    foreach ($endpoints as $method => $endpoints) {
+        foreach ($endpoints as $name => $callback) {
+            register_rest_route($router_namespace, $name, [
+                'methods'   => $method,
+                'callback'  => $callback,
+            ]);
+        }
+    }
+});
