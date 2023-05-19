@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 namespace WPgraphql;
+require_once __DIR__ . '/vendor/autoload.php';
 
 /**
  * @author  Kris van Hes <kris@socialbrothers.nl>
@@ -12,6 +13,7 @@ namespace WPgraphql;
  * Description:       Simple API request demo
  * Version:           0.0.1
  * Author:            Kris van Hes
+ * Author URI:        streepjesmeneer.nl
  * Update URI:        false
  */
 
