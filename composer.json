@@ -14,5 +14,8 @@
     "require-dev": {
         "symfony/var-dumper": "^6.0",
         "roots/wordpress-no-content": "^6.1"
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.6"
     }
 }
