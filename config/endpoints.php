@@ -1,8 +1,11 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 defined('ABSPATH') || exit('Forbidden');
 
-$router_namespace = 'wpgraph/v1';
+// TODO: make this configurable
+$router_namespace = 'wpgraphql';
 
 $endpoints = [
     'GET' => [],
