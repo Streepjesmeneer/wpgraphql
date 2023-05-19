@@ -43,7 +43,7 @@ add_action('rest_api_init', function (): void {
         foreach ($endpoints as $name => $callback) {
             register_rest_route($router_namespace, $name, [
                 'methods'               => $method,
-                'callback'              => $callback,
+                'callback'              => sprintf("\WPgraphql\%s", $callback),
                 'permission_callback'   => '__return_true'
             ]);
         }
