@@ -1,8 +1,8 @@
 {
-    "name": "krisvanhes/wpgraphql",
+    "name": "krisvanhes/productapi",
     "autoload": {
         "psr-4": {
-            "WPgraphql\\": "src/"
+            "ProductAPI\\": "src/"
         }
     },
     "authors": [

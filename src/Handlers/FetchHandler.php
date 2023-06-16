@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WPgraphql\Handlers;
+namespace ProductAPI\Handlers;
 use Exception;
 use \GuzzleHttp\Client;
 

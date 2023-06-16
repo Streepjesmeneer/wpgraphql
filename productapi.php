@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace WPgraphql;
+namespace ProductAPI;
 use \Dotenv\Dotenv;
 
 require_once __DIR__ . '/vendor/autoload.php';
@@ -14,14 +14,14 @@ if (!defined('WPG_PLUGIN_PATH')) {
 }
 
 if (!defined('ROUTE_NAMESPACE')) {
-    define('ROUTE_NAMESPACE', $_ENV['ROUTE_NAMESPACE'] ?? 'wpgraphql');
+    define('ROUTE_NAMESPACE', $_ENV['ROUTE_NAMESPACE'] ?? 'productapi');
 }
 
 /**
  * @author  Kris van Hes <kris@socialbrothers.nl>
  *
  * @wordpress-plugin
- * Plugin Name:       WPGraphQL demo
+ * Plugin Name:       ProductAPI
  * Description:       Simple API request demo
  * Version:           0.0.1
  * Author:            Kris van Hes
@@ -36,8 +36,8 @@ defined('ABSPATH') || exit('Forbidden');
  * otherwise return error
  */
 register_activation_hook(__FILE__, function (): void {
-    if (!is_plugin_active('wp-graphql/wp-graphql.php')) {
-        _e('ERROR: Plugin WPGraphQL needs to be active to this plugin to work', 'WPG');
+    if (!is_plugin_active('productapi/productapi.php')) {
+        _e('ERROR: Plugin ProductAPI needs to be active to this plugin to work', 'WPG');
         die;
     }
 });
