@@ -32,17 +32,6 @@ if (!defined('ROUTE_NAMESPACE')) {
 defined('ABSPATH') || exit('Forbidden');
 
 /**
- * Check if WPGraphQL is active
- * otherwise return error
- */
-register_activation_hook(__FILE__, function (): void {
-    if (!is_plugin_active('productapi/productapi.php')) {
-        _e('ERROR: Plugin ProductAPI needs to be active to this plugin to work', 'WPG');
-        die;
-    }
-});
-
-/**
  * Registering routes for the API
  * This function registers custom API endpoints based on the configuration defined in config/endpoints.php file.
  */
