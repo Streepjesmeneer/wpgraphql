@@ -13,7 +13,7 @@ class RouteHandler
      */
     public static function get_products()
     {
-        $products = file_get_contents(WPG_PLUGIN_PATH . '/config/products.json');
+        $products = file_get_contents(WPP_PLUGIN_URI . '/config/products.json');
 
         return wp_send_json(json_decode($products));
     }
